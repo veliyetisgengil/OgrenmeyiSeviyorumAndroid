@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.veliyetisgengil.benogrenmeyiseviyorum.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:text="LOGO"
+            android:textAlignment="center"
+            android:textSize="50sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="118dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_animal"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Hayvanlar" />
+
+        <Button
+            android:id="@+id/btn_color"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Renkler" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="203dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_number"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Sayılar" />
+
+        <Button
+            android:id="@+id/btn_word"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Harfler" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/isim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="0dp"
+        android:text="@string/copyright"
+        android:textAlignment="center"
+        android:textColor="@android:color/darker_gray"
+        android:translationX="0dp" />
+</android.widget.LinearLayout>
