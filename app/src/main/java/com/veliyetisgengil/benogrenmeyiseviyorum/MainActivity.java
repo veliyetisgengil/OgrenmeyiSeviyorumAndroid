@@ -1,5 +1,6 @@
 package com.veliyetisgengil.benogrenmeyiseviyorum;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -18,12 +19,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         number = findViewById(R.id.btn_number);
         word = findViewById(R.id.btn_word);
         animal.setOnClickListener(this);
+        color.setOnClickListener(this);
+        number.setOnClickListener(this);
+        word.setOnClickListener(this);
         t = findViewById(R.id.isim);
 
     }
 
     @Override
     public void onClick(View view) {
-    t.setText(R.string.isim);
+        if(view.getId() == animal.getId()){
+            Intent i = new Intent(getApplicationContext(),Animal.class);
+            startActivity(i);
+        }
+        else if(view.getId() == color.getId()){
+            Intent i = new Intent(getApplicationContext(),Color.class);
+            startActivity(i);
+        }
+        else if(view.getId() == number.getId()){
+            Intent i = new Intent(getApplicationContext(),Number.class);
+            startActivity(i);
+        }
+        else if(view.getId() == word.getId()){
+            Intent i = new Intent(getApplicationContext(),Word.class);
+            startActivity(i);
+        }
+
     }
 }
